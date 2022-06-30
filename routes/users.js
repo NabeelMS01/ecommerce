@@ -448,7 +448,7 @@ router.get("/success/:id", async (req, res) => {
         products,
         total,
         req.session.appliedCoupon,
-        req.session.userData._id
+        req.session.userData
       )
       .then((response) => {
         res.redirect("/orders");
