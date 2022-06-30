@@ -441,14 +441,14 @@ router.get("/success/:id", async (req, res) => {
 
   let products = await userHelper.getCartProducts(req.session.userData);
 
-  userHelper.verifypaypal(payerId, paymentId, total).then((response) => {
+ await userHelper.verifypaypal(payerId, paymentId, total).then((response) => {
     userHelper
       .placeOrderOnline(
         data,
         products,
         total,
         req.session.appliedCoupon,
-        req.session.user._id
+        req.session.userData._id
       )
       .then((response) => {
         res.redirect("/orders");
