@@ -728,7 +728,7 @@ module.exports = {
           email: order.email,
           pincode: order.pincode,
         },
-        userId: ObjectId(order.userId),
+        userId: ObjectId(order.userId._id),
         paymentMethod: order["payment_method"],
         products: products,
         totalAmount: total,
@@ -752,7 +752,7 @@ module.exports = {
               .get()
               .collection(collection.USER_COLLECTION)
               .updateOne(
-                { _id: ObjectId(userId) },
+                { _id: ObjectId(userId._id) },
                 {
                   $push: { used_coupons: coupon.coupon_code },
                 }
