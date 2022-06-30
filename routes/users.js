@@ -439,7 +439,7 @@ router.get("/success/:id", async (req, res) => {
   let total = req.session.totalPrice;
   let data = req.session.orderdata;
 
-  let products = await userHelper.getCartProducts(req.session.userData._id);
+  let products = await userHelper.getCartProducts(req.session.userData);
 
   userHelper.verifypaypal(payerId, paymentId, total).then((response) => {
     userHelper
