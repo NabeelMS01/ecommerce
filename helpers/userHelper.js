@@ -857,8 +857,8 @@ module.exports = {
           payment_method: "paypal",
         },
         redirect_urls: {
-          return_url: `http://nabeelmampallil.com/success/${order.userId}?paymentMethod=${order.payment_method}&phone=${order.phone}`,
-          cancel_url: "http://nabeelmampallil.com/cart",
+          return_url: `https://nabeelmampallil.com/success/${order.userId}?paymentMethod=${order.payment_method}&phone=${order.phone}`,
+          cancel_url: "https://nabeelmampallil.com/cart",
         },
         transactions: [
           {
