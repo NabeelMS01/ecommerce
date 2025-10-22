@@ -33,7 +33,7 @@
     "random-number": "^0.0.9",
     "razorpay": "^2.8.1",
     "sweetalert": "^2.1.2",
-    "sweetalert2": "^11.4.17",
+    "sweetalert2": "^11.23.0",
     "twilio": "^3.77.1",
     "uniqid": "^5.4.0"
   }
