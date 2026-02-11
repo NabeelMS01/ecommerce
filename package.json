@@ -34,7 +34,7 @@
     "razorpay": "^2.8.1",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.4.17",
-    "twilio": "^3.77.1",
+    "twilio": "^4.19.3",
     "uniqid": "^5.4.0"
   }
 }
